@@ -1,0 +1,20 @@
+.Whatsapp_boton {
+    position: fixed; /*Para que quede fijado sin importar que haga el usuario*/
+    width: 60px; /*Ancho*/
+    height: 60px; /*Alto*/
+    bottom: 25px; /*Separa el boton 25px desde el bottom*/
+    right: 25px; /*Separa el boton 25px desde el borde derecho*/
+    background-color: #d7ddda;
+    border-radius: 50px; /*Le quita los bordes*/
+    font-size: 30px; /*Tamaño del icono*/
+    z-index: 1000; /*El boton tiene una mayor posición a todos los elementos de la pagina*/
+    display: flex; /*Se convierte en eleemnto flexible para que quede en la esquina siempre*/
+    align-items: center; /*El logo de whatsapp se centra*/
+    justify-content: center; /*El logo de whatsapp se centra*/
+    transition: all 0.3s ease; 
+}
+
+.Whatsapp_boton:hover { /*hover se usa para cuando uno pasa el puntero por encima*/
+    background-color: #20ba5a;
+    transform: scale(1.1); /* Efecto de crecimiento al pasar el mouse */
+}
