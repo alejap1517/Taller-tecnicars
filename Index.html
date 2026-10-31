@@ -34,48 +34,246 @@
             <section id="Inicio"> <!--Segunda seccion--> 
                 <div class="background_video">
                     <video autoplay muted loop> <!--Video en loop sin sonido--> 
-                        <source src="#" type="video/mp4" alt="carrusel de fotos">
+                        <source src="./Images/Background-video.mp4" type="video/mp4" alt="carrusel de fotos">
                     </video>
                 </div>
 
                 <div class="information">
                     <h1>¡El mejor servicio que su vehículo merece!</h1>
-                    <p>Diagnostico preciso, repuestos de calidad y la honestidad que tu vehículo merece. Más de 30 años de experiencia cuidando de tu familia en el camino. </p>   
+                    <p>Más de 30 años de experiencia cuidando de tu familia en el camino. Diagnostico preciso, repuestos de calidad y la honestidad que mereces. </p>
+                    <p>¿Tu vehiculo no enciende o no puedes moverlo? ¡Atendemos a domicilio para revisarlo donde estés!</p>
                 </div>
 
                 <nav class="Price">
-                    <a href="#Cotizacion">Cotiza sin compromiso</a>
+                    <a href="#Cotizacion">Pedir presupuesto</a>
                 </nav>
             </section>
 
             <section id="Servicios">  
                 <div class="text-center">
-                    <h1>
+                    <h2>NUESTROS SERVICIOS</h2>
+                </div>
 
-                    </h1>
+                <!-- Carrusel para colocal los servicios -->
+                <div class="position-relative">
+                    <div id="carruselServicios" class="d-flex gap-4 overflow-hidden py-2" style="scroll-behavior: smooth;">
+
+                        <!-- PRODUCTO 1 -->
+                        <div class="w-25"> <!-- w es el tamaño -->
+                            <div class="card producto-card h-100">
+                                <img src="./Images/Mantenimiento-correctivo.png" alt="Mantenimiento correctivo"
+                                    class="card-img-top" 
+                                > <!-- La imagen este en toda la card -->
+
+                                <div class="card-body">
+                                    <h3 class="card-title">
+                                        Mantenimiento correctivo
+                                    </h3>
+
+                                    <p class="card-text">
+                                        Diagnostico, reparación o reconstrucción, sustitución de componentes y pruebas de funcionamiento.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCTO 2 -->
+                        <div class="w-25">
+                            <div class="card producto-card h-100">
+                                <img src="./Images/Alineacion-y-balanceo.png" alt="Alineacion y balanceo"
+                                    class="card-img-top"
+                                >
+
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Alineación y balanceo
+                                    </h5>
+
+                                    <p class="card-text text-muted">
+                                        Revisión previa, montaje en la máquina, colocación de sensores, lectura computarizada, ajuste mecánico y prueba final.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCTO 3 -->
+                        <div class="w-25">
+                            <div class="card producto-card h-100">
+                                <img src="./Images/Cambio-aceite.png" alt="Cambio de aceite"
+                                    class="card-img-top"
+                                >
+
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Cambio de aceite
+                                    </h5>
+
+                                    <p class="card-text text-muted">
+                                        Preparación del motor, drenaje del aceite usado, cambio del filtro de aceite, llenado con aceite nuevo y verificacion de nivel y fugas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCTO 4 -->
+                        <div class="w-25">
+                            <div class="card producto-card h-100">
+                                <img src="./Images/Scanner.png" alt="Escaner"
+                                    class="card-img-top"
+                                >
+
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Escáner
+                                    </h5>
+
+                                    <p class="card-text text-muted">
+                                        El escanér es el diagnostico por computadora del automovil, muestra de datos en tiempo real y realiza pruebas de actuadores.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCTO 5 -->
+                        <div class="w-25">
+                            <div class="card producto-card h-100">
+                                <img src="./Images/Latoneria.png" alt="Latoneria"
+                                    class="card-img-top"
+                                >
+
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Latonería
+                                    </h5>
+
+                                    <p class="card-text text-muted">
+                                        Corrección de abolladuras y golpes, eliminación de óxido y corrosión, se hace uso de tecnologias modernas para no dañar las piezas originales y se realiza la preparación para pintura.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCTO 6 -->
+                        <div class="w-25">
+                            <div class="card producto-card h-100">
+                                <img src="./Images/Reparacion-motor.png" alt="Reparacion motor"
+                                    class="card-img-top"
+                                >
+
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Reparación motor
+                                    </h5>
+
+                                    <p class="card-text text-muted">
+                                        Diagnostico y medición, rectificado, cambio de piezas desgastadas y limpieza profunda.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCTO 7 -->
+                        <div class="w-25">
+                            <div class="card producto-card h-100">
+                                <img src="./Images/Sincronizacion.png" alt="Sincronizacion"
+                                    class="card-img-top"
+                                >
+
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Sincronización
+                                    </h5>
+
+                                    <p class="card-text text-muted">
+                                        Se revisan y se reemplazan las bujias t cables, filtros, inyectores, cuerpo de aceleración y válcula IAC.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCTO 8 -->
+                        <div class="w-25">
+                            <div class="card producto-card h-100">
+                                <img src="./Images/Peritaje.png" alt="Peritaje"
+                                    class="card-img-top"
+                                >
+
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Peritaje
+                                    </h5>
+
+                                    <p class="card-text text-muted">
+                                        Revisión técnica y detallada que evalúa el estado real, la estructura, la mecánica, los compnentes eléctricos y los antecedentes legales de su vehículo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCTO 8 -->
+                        <div class="w-25">
+                            <div class="card producto-card h-100">
+                                <img src="./Images/Peritaje.png" alt="Peritaje"
+                                    class="card-img-top"
+                                >
+
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Peritaje
+                                    </h5>
+
+                                    <p class="card-text text-muted">
+                                        Revisión técnica y detallada que evalúa el estado real, la estructura, la mecánica, los compnentes eléctricos y los antecedentes legales de su vehículo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCTO 9 -->
+                        <div class="w-25">
+                            <div class="card producto-card h-100">
+                                <img src="./Images/Taller-domicilio.png" alt="Taller domicilio"
+                                    class="card-img-top"
+                                >
+
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Servicio mecánico a domicilio
+                                    </h5>
+
+                                    <p class="card-text text-muted">
+                                        ¿Tu auto no enciende, hace un ruido extraño o no puedes moverlo? Vamos hasta tu casa, oficina o donde te encuentres. Realizamos diagnósticos en el sitio, mantenimientos rápidos y auxilio mecánico para que no pierdas tiempo ni te preocupes por la grúa..
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="btnSiguienteServicios" class="position-absolute top-50 end0 translate-middle-y btn btn-dark rounded-circle shadow z-3" style="width: 45px; height: 45px;">
+                    </button>
                 </div>
             </section>
 
-            <section id="Cotizacion">    
-                
-            </section>
+                    <section id="Cotizacion">    
+                        
+                    </section>
 
-            <section id="Experiencia">    
-                
-            </section>
+                    <section id="Experiencia">    
+                        
+                    </section>
 
-            <section id="Testimonios">    
-                
-            </section>
+                    <section id="Testimonios">    
+                        
+                    </section>
 
-            <div class="Whatsapp_boton">
-                <a href="https://wa.me/573153356732?text=Hola%20quiero%20solicitar%20más%20información" 
-                class="whatsapp-float" 
-                target="_blank" 
-                title="¡Escríbenos por WhatsApp!">
-                    <i class="bi bi-whatsapp" style="color:green"></i>
-                </a>
-            </div>
+                    <div class="Whatsapp_boton">
+                        <a href="https://wa.me/573153356732?text=Hola%20quiero%20solicitar%20más%20información" 
+                        class="whatsapp-float" 
+                        target="_blank" 
+                        title="¡Escríbenos por WhatsApp!">
+                            <i class="bi bi-whatsapp" style="color:green"></i>
+                        </a>
+                    </div>
 
         </main>
 
@@ -108,5 +306,8 @@
             </div>
         </footer>
     </div>
+
+    <!-- Archivo de JavaScript-->
+    <script src="app.js"></script>
 </body>
 </html>
