@@ -7,6 +7,11 @@
     height: 180px; /*Le da la misma altura a todas las imagenes*/
 }
 
+.carro-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
 .Whatsapp_boton {
     position: fixed; /*Para que quede fijado sin importar que haga el usuario*/
     width: 60px; /*Ancho*/
