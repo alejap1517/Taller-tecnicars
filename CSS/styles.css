@@ -1,3 +1,12 @@
+.tarjeta-carrusel {
+    flex: 0 0 33.33%; /*Proporción para que solo salgan 3 imagenes*/
+    min-width: 250px;
+}
+
+.producto-card img {
+    height: 180px; /*Le da la misma altura a todas las imagenes*/
+}
+
 .Whatsapp_boton {
     position: fixed; /*Para que quede fijado sin importar que haga el usuario*/
     width: 60px; /*Ancho*/

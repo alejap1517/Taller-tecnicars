@@ -1,6 +1,11 @@
 const carrusel = document.getElementById('carruselServicios');
-const btnSiguiente = document.getElementById('btnSiguienteServicios')
+const btnDerecha = document.getElementById('btnDerechaServicios')
+const btnIzquierda = document.getElementById('btnIzquierdoServicios')
 
-btnSiguiente.addEventListener('click', () =>{
-    carrusel.scrollBy({ left: 330, behavior: 'smooth'});
+btnDerecha.addEventListener('click', () =>{
+    carrusel.scrollBy({ left: 320, behavior: 'smooth'});
+});
+
+btnIzquierda.addEventListener('click', () =>{
+    carrusel.scrollBy({ left: -320, behavior: 'smooth'});
 });

@@ -16,7 +16,7 @@
 
 </head>
 <body>
-    <div class="layout-container"></div>
+    <div class="layout-container">
         <header class="header"> <!--Primera seccion-->
             <div class="logo"> <!--Uso div porque es un contenedor pero para el navegador web no tiene significado-->
                 <img src="./Images/Logo.png" alt="Logo Taller Tecnicars">
@@ -49,21 +49,26 @@
                 </nav>
             </section>
 
-            <section id="Servicios">  
-                <div class="text-center">
+            <section id="Servicios" class="container py-4">  
+                <div class="text-center mb-4">
                     <h2>NUESTROS SERVICIOS</h2>
                 </div>
 
-                <!-- Carrusel para colocal los servicios -->
-                <div class="position-relative">
-                    <div id="carruselServicios" class="d-flex gap-4 overflow-hidden py-2" style="scroll-behavior: smooth;">
+                <div class="position-relative px-5"> <!-- Posición para que lo botones puedan flotar y queden por fuera de las tarjetas -->
+
+                    <!-- Boton para el lado izquierdo -->
+                    <button id="btnIzquierdoServicios" class="btn btn-dark rounded-circle position-absolute top-50 start-0 translate-middle-y" style="width: 45px; height: 45px;">
+                    </button>
+
+                    <!-- Carrusel: d-flex se usa para poner la tarjeta al lado de la otra, gap-3: espacio entre tarheta y tarjeta, overflow-hidden: oculta lo que se salga de la caja, py-2: espacio vertical y el style es para que se vea una transición al dar click -->
+                    <div id="carruselServicios" class="d-flex gap-3 overflow-hidden py-2" style="scroll-behavior: smooth;">
 
                         <!-- PRODUCTO 1 -->
-                        <div class="w-25"> <!-- w es el tamaño -->
-                            <div class="card producto-card h-100">
+                        <div class="tarjeta-carrusel">
+                            <div class="card producto-card h-100"> <!-- La imagen tome la altura disponible -->
                                 <img src="./Images/Mantenimiento-correctivo.png" alt="Mantenimiento correctivo"
-                                    class="card-img-top" 
-                                > <!-- La imagen este en toda la card -->
+                                class="card-img-top" 
+                                > <!-- la class hace que la imagen tenga las esquinas circulares -->
 
                                 <div class="card-body">
                                     <h3 class="card-title">
@@ -78,18 +83,18 @@
                         </div>
 
                         <!-- PRODUCTO 2 -->
-                        <div class="w-25">
+                        <div class="tarjeta-carrusel">
                             <div class="card producto-card h-100">
                                 <img src="./Images/Alineacion-y-balanceo.png" alt="Alineacion y balanceo"
-                                    class="card-img-top"
+                                class="card-img-top"
                                 >
 
                                 <div class="card-body">
-                                    <h5 class="card-title">
+                                    <h3 class="card-title">
                                         Alineación y balanceo
-                                    </h5>
+                                    </h3>
 
-                                    <p class="card-text text-muted">
+                                    <p class="card-text">
                                         Revisión previa, montaje en la máquina, colocación de sensores, lectura computarizada, ajuste mecánico y prueba final.
                                     </p>
                                 </div>
@@ -97,18 +102,18 @@
                         </div>
 
                         <!-- PRODUCTO 3 -->
-                        <div class="w-25">
+                        <div class="tarjeta-carrusel">
                             <div class="card producto-card h-100">
                                 <img src="./Images/Cambio-aceite.png" alt="Cambio de aceite"
-                                    class="card-img-top"
+                                class="card-img-top"
                                 >
 
                                 <div class="card-body">
-                                    <h5 class="card-title">
+                                    <h3 class="card-title">
                                         Cambio de aceite
-                                    </h5>
+                                    </h3>
 
-                                    <p class="card-text text-muted">
+                                    <p class="card-text">
                                         Preparación del motor, drenaje del aceite usado, cambio del filtro de aceite, llenado con aceite nuevo y verificacion de nivel y fugas.
                                     </p>
                                 </div>
@@ -116,18 +121,18 @@
                         </div>
 
                         <!-- PRODUCTO 4 -->
-                        <div class="w-25">
+                        <div class="tarjeta-carrusel">
                             <div class="card producto-card h-100">
                                 <img src="./Images/Scanner.png" alt="Escaner"
-                                    class="card-img-top"
+                                class="card-img-top"
                                 >
 
                                 <div class="card-body">
-                                    <h5 class="card-title">
+                                    <h3 class="card-title">
                                         Escáner
-                                    </h5>
+                                    </h3>
 
-                                    <p class="card-text text-muted">
+                                    <p class="card-text">
                                         El escanér es el diagnostico por computadora del automovil, muestra de datos en tiempo real y realiza pruebas de actuadores.
                                     </p>
                                 </div>
@@ -135,18 +140,18 @@
                         </div>
 
                         <!-- PRODUCTO 5 -->
-                        <div class="w-25">
+                        <div class="tarjeta-carrusel">
                             <div class="card producto-card h-100">
                                 <img src="./Images/Latoneria.png" alt="Latoneria"
-                                    class="card-img-top"
+                                class="card-img-top"
                                 >
 
                                 <div class="card-body">
-                                    <h5 class="card-title">
+                                    <h3 class="card-title">
                                         Latonería
-                                    </h5>
+                                    </h3>
 
-                                    <p class="card-text text-muted">
+                                    <p class="card-text">
                                         Corrección de abolladuras y golpes, eliminación de óxido y corrosión, se hace uso de tecnologias modernas para no dañar las piezas originales y se realiza la preparación para pintura.
                                     </p>
                                 </div>
@@ -154,18 +159,18 @@
                         </div>
 
                         <!-- PRODUCTO 6 -->
-                        <div class="w-25">
+                        <div class="tarjeta-carrusel">
                             <div class="card producto-card h-100">
                                 <img src="./Images/Reparacion-motor.png" alt="Reparacion motor"
-                                    class="card-img-top"
+                                class="card-img-top"
                                 >
 
                                 <div class="card-body">
-                                    <h5 class="card-title">
+                                    <h3 class="card-title">
                                         Reparación motor
-                                    </h5>
+                                    </h3>
 
-                                    <p class="card-text text-muted">
+                                    <p class="card-text">
                                         Diagnostico y medición, rectificado, cambio de piezas desgastadas y limpieza profunda.
                                     </p>
                                 </div>
@@ -173,18 +178,18 @@
                         </div>
 
                         <!-- PRODUCTO 7 -->
-                        <div class="w-25">
+                        <div class="tarjeta-carrusel">
                             <div class="card producto-card h-100">
                                 <img src="./Images/Sincronizacion.png" alt="Sincronizacion"
-                                    class="card-img-top"
+                                class="card-img-top"
                                 >
 
                                 <div class="card-body">
-                                    <h5 class="card-title">
+                                    <h3 class="card-title">
                                         Sincronización
-                                    </h5>
+                                    </h3>
 
-                                    <p class="card-text text-muted">
+                                    <p class="card-text">
                                         Se revisan y se reemplazan las bujias t cables, filtros, inyectores, cuerpo de aceleración y válcula IAC.
                                     </p>
                                 </div>
@@ -192,37 +197,18 @@
                         </div>
 
                         <!-- PRODUCTO 8 -->
-                        <div class="w-25">
+                        <div class="tarjeta-carrusel">
                             <div class="card producto-card h-100">
                                 <img src="./Images/Peritaje.png" alt="Peritaje"
-                                    class="card-img-top"
+                                class="card-img-top"
                                 >
 
                                 <div class="card-body">
-                                    <h5 class="card-title">
+                                    <h3 class="card-title">
                                         Peritaje
-                                    </h5>
+                                    </h3>
 
-                                    <p class="card-text text-muted">
-                                        Revisión técnica y detallada que evalúa el estado real, la estructura, la mecánica, los compnentes eléctricos y los antecedentes legales de su vehículo.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- PRODUCTO 8 -->
-                        <div class="w-25">
-                            <div class="card producto-card h-100">
-                                <img src="./Images/Peritaje.png" alt="Peritaje"
-                                    class="card-img-top"
-                                >
-
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        Peritaje
-                                    </h5>
-
-                                    <p class="card-text text-muted">
+                                    <p class="card-text">
                                         Revisión técnica y detallada que evalúa el estado real, la estructura, la mecánica, los compnentes eléctricos y los antecedentes legales de su vehículo.
                                     </p>
                                 </div>
@@ -230,50 +216,49 @@
                         </div>
 
                         <!-- PRODUCTO 9 -->
-                        <div class="w-25">
+                        <div class="tarjeta-carrusel">
                             <div class="card producto-card h-100">
                                 <img src="./Images/Taller-domicilio.png" alt="Taller domicilio"
-                                    class="card-img-top"
+                                class="card-img-top"
                                 >
 
                                 <div class="card-body">
-                                    <h5 class="card-title">
+                                    <h3 class="card-title">
                                         Servicio mecánico a domicilio
-                                    </h5>
+                                    </h3>
 
-                                    <p class="card-text text-muted">
+                                    <p class="card-text">
                                         ¿Tu auto no enciende, hace un ruido extraño o no puedes moverlo? Vamos hasta tu casa, oficina o donde te encuentres. Realizamos diagnósticos en el sitio, mantenimientos rápidos y auxilio mecánico para que no pierdas tiempo ni te preocupes por la grúa..
                                     </p>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <button id="btnSiguienteServicios" class="position-absolute top-50 end0 translate-middle-y btn btn-dark rounded-circle shadow z-3" style="width: 45px; height: 45px;">
+                    <button id="btnDerechaServicios" class="position-absolute top-50 end-0 translate-middle-y btn btn-dark rounded-circle shadow z-3" style="width: 45px; height: 45px;">
                     </button>
                 </div>
             </section>
 
-                    <section id="Cotizacion">    
-                        
-                    </section>
+            <section id="Cotizacion">    
+                
+            </section>
 
-                    <section id="Experiencia">    
-                        
-                    </section>
+            <section id="Experiencia">    
+                
+            </section>
 
-                    <section id="Testimonios">    
-                        
-                    </section>
+            <section id="Testimonios">    
+                
+            </section>
 
-                    <div class="Whatsapp_boton">
-                        <a href="https://wa.me/573153356732?text=Hola%20quiero%20solicitar%20más%20información" 
-                        class="whatsapp-float" 
-                        target="_blank" 
-                        title="¡Escríbenos por WhatsApp!">
-                            <i class="bi bi-whatsapp" style="color:green"></i>
-                        </a>
-                    </div>
+            <div class="Whatsapp_boton">
+                <a href="https://wa.me/573153356732?text=Hola%20quiero%20solicitar%20más%20información" 
+                class="whatsapp-float" 
+                target="_blank" 
+                title="¡Escríbenos por WhatsApp!">
+                    <i class="bi bi-whatsapp" style="color:green"></i>
+                </a>
+            </div>
 
         </main>
 
@@ -308,6 +293,6 @@
     </div>
 
     <!-- Archivo de JavaScript-->
-    <script src="app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
