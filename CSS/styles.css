@@ -1,5 +1,17 @@
+.header-tecnicars {
+    background-color: #1E3A2F; /* Color de fondo */
+}
+
+.links a:hover {
+    color: #D97706 !important; /* Color de texto al pasar el mouse */
+}
+
+.Price a:hover {
+    background-color: #D97706 !important; /* Color de fondo al pasar el mouse */
+}
+
 .tarjeta-carrusel {
-    flex: 0 0 33.33%; /*Proporción para que solo salgan 3 imagenes*/
+    flex: 0 0 33.3%; /*Proporción para que solo salgan 3 imagenes*/
     min-width: 250px;
 }
 
