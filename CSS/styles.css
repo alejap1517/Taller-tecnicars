@@ -6,7 +6,7 @@
     color: #D97706 !important; /* Color de texto al pasar el mouse */
 }
 
-.Price a:hover {
+.Agendar a:hover {
     background-color: #D97706 !important; /* Color de fondo al pasar el mouse */
 }
 
@@ -22,6 +22,10 @@
 .carro-card img {
     height: 250px;
     object-fit: cover;
+}
+
+.boton-cita:hover {
+    background-color: #D97706 !important; /* Color de fondo al pasar el mouse */
 }
 
 .logos img {
