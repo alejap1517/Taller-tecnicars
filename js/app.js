@@ -3,9 +3,9 @@ const btnDerecha = document.getElementById('btnDerechaServicios')
 const btnIzquierda = document.getElementById('btnIzquierdoServicios')
 
 btnDerecha.addEventListener('click', () =>{
-    carrusel.scrollBy({ left: 320, behavior: 'smooth'});
+    carrusel.scrollBy({ left: 345, behavior: 'smooth'});
 });
 
 btnIzquierda.addEventListener('click', () =>{
-    carrusel.scrollBy({ left: -320, behavior: 'smooth'});
+    carrusel.scrollBy({ left: -345, behavior: 'smooth'});
 });
