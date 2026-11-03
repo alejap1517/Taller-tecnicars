@@ -1,4 +1,4 @@
-.header-tecnicars {
+.header-tecnicars{
     background-color: #1E3A2F; /* Color de fondo */
 }
 
@@ -24,6 +24,17 @@
     object-fit: cover;
 }
 
+.logos img {
+    max-height: 100px;
+    filter: grayscale(70%); /* Los vuelve grises */
+    transition: all 0.3s ease;
+}
+
+.logos img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1); /* Efecto de crecimiento al pasar el mouse */
+}
+
 .Whatsapp_boton {
     position: fixed; /*Para que quede fijado sin importar que haga el usuario*/
     width: 60px; /*Ancho*/
@@ -43,4 +54,8 @@
 .Whatsapp_boton:hover { /*hover se usa para cuando uno pasa el puntero por encima*/
     background-color: #20ba5a;
     transform: scale(1.1); /* Efecto de crecimiento al pasar el mouse */
+}
+
+.footer-tecnicars {
+    background-color: #1E3A2F;
 }

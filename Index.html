@@ -19,16 +19,16 @@
 <body>
     <div class="container-fluid"> 
         <header class="header-tecnicars d-flex justify-content-between align-items-center py-3 px-4"> <!--Primera seccion-->
-            <div class="logo"> <!--Uso div porque es un contenedor pero para el navegador web no tiene significado-->
+            <div class="logo-inicio"> <!--Uso div porque es un contenedor pero para el navegador web no tiene significado-->
                 <img src="./Images/Logo.png" alt="Logo Taller Tecnicars"
                 style="width: auto; height: 100px;">
             </div>
         
             <nav class="links d-flex gap-4 align-items-center m-0"> <!--Uso nav que indica "navegation" y el navegador web lo identidica como manu principal de la pagina-->
                 <a href="#Servicios" class="text-decoration-none text-light fw-bold">SERVICIOS</a>
-                <a href="#Agendamiento" class="text-decoration-none text-light fw-bold">COTIZACION</a>
                 <a href="#Experiencia" class="text-decoration-none text-light fw-bold">EXPERIENCIA</a>
                 <a href="#Marcas" class="text-decoration-none text-light fw-bold">MARCAS</a>
+                <a href="#Agendamiento" class="text-decoration-none text-light fw-bold">AGENDAMIENTO</a>
                 <a href="#Contacto" class="text-decoration-none text-light fw-bold">CONTACTO</a>
             </nav>
         </header>
@@ -246,10 +246,6 @@
                 </div>
             </section>
 
-            <section id="Agendamiento">    
-                
-            </section>
-
             <section id="Experiencia" class="row g-4"> <!--quinta seccion--> 
                 <div class="text-center">
                     <h2>NUESTRA EXPERIENCIA EN EL TALLER</h2>
@@ -328,11 +324,33 @@
                 </div>
             </section>
 
-            <section id="Marcas" class="py-5 bg-light text-center"> <!--sexta seccion-->
+            <section id="Agendamiento">    
+                
+            </section>
+
+            <section id="Marcas" class="py-4 text-center container-fluid"> <!--sexta seccion-->
                 <div class="text-center">
                     <h2>TRABAJAMOS CON ESTAS MARCAS</h2>
                 </div>
                 
+                <div class="logos row justify-content-center align-items-center g-4 bg-light">
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Nissan.png" alt="Nissan" class="img-fluid brand-logo"></div>
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Renault.png" alt="Renault" class="img-fluid brand-logo"></div>
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Chevrolet.png" alt="Chevrolet" class="img-fluid brand-logo"></div>
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Toyota.png" alt="Toyota" class="img-fluid brand-logo"></div>
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Honda.png" alt="Honda" class="img-fluid brand-logo"></div>
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Kia.png" alt="Kia" class="img-fluid brand-logo"></div>
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-BMW.png" alt="BMW" class="img-fluid brand-logo"></div>
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Chery.png" alt="Chery" class="img-fluid brand-logo"></div>
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Jeep.png" alt="Jeep" class="img-fluid brand-logo"></div>
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Daihatsu.png" alt="Daihatsu" class="img-fluid brand-logo"></div>
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Ford.png" alt="Ford" class="img-fluid brand-logo"></div>
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Mazda.png" alt="Mazda" class="img-fluid brand-logo"></div>
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Hyundai.png" alt="Hyundai" class="img-fluid brand-logo"></div>
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Mitsubishi.png" alt="Mitsubishi" class="img-fluid brand-logo"></div>
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Peugeot.png" alt="Peugeot" class="img-fluid brand-logo"></div>
+                    <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Suzuki.png" alt="Suzuki" class="img-fluid brand-logo"></div>
+                </div>
             </section>
 
             <div class="Whatsapp_boton">
@@ -346,9 +364,10 @@
 
         </main>
 
-        <footer id="Contacto">
+        <footer id="Contacto" class="footer-tecnicars d-flex flex-column align-items-center justify-content-center py-4 px-4 text-light"> <!--Septima seccion-->
             <div class="logo"> 
-                <img src="./Images/Logo.png" alt="Logo Taller Tecnicars">
+                <img src="./Images/Logo.png" alt="Logo Taller Tecnicars"
+                style="width: auto; height: 100px;">
             </div>
             <div class="ubicacion">
                 <h2>Nuestra ubicación:</h2>
