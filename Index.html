@@ -55,7 +55,7 @@
             </section>
 
             <section id="Servicios" class="container py-4">  <!--Tercera seccion--> 
-                <div class="text-center mb-4 fw-bold">
+                <div class="text-center py-5 fw-bold">
                     <h2>NUESTROS SERVICIOS</h2>
                 </div>
 
@@ -247,9 +247,9 @@
             </section>
 
             <section id="Experiencia" class="row g-4"> <!--cuarta seccion--> 
-                <div class="text-center mb-4 fw-bold">
+                <div class="text-center py-5 fw-bold">
                     <h2>NUESTRA EXPERIENCIA EN EL TALLER</h2>
-                    <P class="fw-normal">Algunos de los proyectos que han pasado por nuestras manos</P>
+                    <p class="fw-normal">Algunos de los proyectos que han pasado por nuestras manos</p>
                 </div>
 
                 <!-- Carro 1 -->
@@ -325,7 +325,62 @@
             </section>
 
             <section id="Agendamiento"> <!--quinta seccion-->   
-                
+                <div class="text-center mb-4 fw-bold py-5">
+                    <h2>AGENDA TU CITA</h2>
+                    <p class="fw-normal">Completa el formulario y nos pondremos en contacto contigo.</p>
+                </div>
+
+                <form id="agenda" action="#">
+                    <div class="Nombre mb-3">
+                        <label for="nombre" class="form-label">Nombre completo: *</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="Celular mb-3">
+                        <label for="celular" class="form-label">Número de celular: *</label>
+                        <input type="text" class="form-control" id="celular" name="celular" required>
+                    </div>
+
+                    <div class="Correo mb-3">
+                        <label for="correo" class="form-label">Correo electrónico: *</label>
+                        <input type="email" class="form-control" id="correo" name="correo" required>
+                    </div>
+
+                    <div class="Vehiculo mb-3">
+                        <label for="vehiculo" class="form-label">Vehículo: *</label>
+                        <input type="text" class="form-control" id="vehiculo" name="vehiculo" required>
+                    </div>
+
+                    <div class="Placa mb-3">
+                        <label for="placa" class="form-label">Placa del vehículo: *</label>
+                        <input type="text" class="form-control" id="placa" name="placa" required>
+                    </div>
+
+                    <div class="Fecha mb-3">
+                        <label for="fecha" class="form-label">Fecha de cita: *</label>
+                        <input type="date" class="form-control" id="fecha" name="fecha" required>
+                    </div>
+
+                    <div class="Hora mb-3">
+                        <label for="hora" class="form-label">Hora de cita: *</label>
+                        <input type="time" class="form-control" id="hora" name="hora" required>
+                </form>
+
+                <div class="mb-3">
+                    <label for="servicio" class="form-label">Tipo de servicio *</label>
+                    <select class="form-select" id="servicio" name="servicio" required>
+                        <option value="">-- Selecciona un servicio --</option>
+                        <option value="mantenimiento">Mantenimiento</option>
+                        <option value="aceite">Alineación y balanceo</option>
+                        <option value="aceite">Cambio de aceite</option>
+                        <option value="aceite">Escáner</option>
+                        <option value="aceite">Latonería</option>
+                        <option value="frenos">Reparación motor</option>
+                        <option value="escaner">Sincronización</option>
+                        <option value="escaner">Peritaje</option>
+                </select>
+                </div>
+
             </section>
 
             <section id="Marcas" class="pt-5 text-center container-fluid"> <!--sexta seccion-->
