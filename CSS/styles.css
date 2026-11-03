@@ -49,7 +49,7 @@
     border-radius: 50px; /*Le quita los bordes*/
     font-size: 30px; /*Tamaño del icono*/
     z-index: 1000; /*El boton tiene una mayor posición a todos los elementos de la pagina*/
-    display: flex; /*Se convierte en eleemnto flexible para que quede en la esquina siempre*/
+    display: flex; /*Se convierte en elemnto flexible para que quede en la esquina siempre*/
     align-items: center; /*El logo de whatsapp se centra*/
     justify-content: center; /*El logo de whatsapp se centra*/
     transition: all 0.3s ease; 
