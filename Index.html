@@ -27,8 +27,8 @@
             <nav class="links d-flex gap-4 align-items-center m-0"> <!--Uso nav que indica "navegation" y el navegador web lo identidica como manu principal de la pagina-->
                 <a href="#Servicios" class="text-decoration-none text-light fw-bold">SERVICIOS</a>
                 <a href="#Experiencia" class="text-decoration-none text-light fw-bold">EXPERIENCIA</a>
-                <a href="#Marcas" class="text-decoration-none text-light fw-bold">MARCAS</a>
                 <a href="#Agendamiento" class="text-decoration-none text-light fw-bold">AGENDAMIENTO</a>
+                <a href="#Marcas" class="text-decoration-none text-light fw-bold">MARCAS</a>
                 <a href="#Contacto" class="text-decoration-none text-light fw-bold">CONTACTO</a>
             </nav>
         </header>
@@ -55,7 +55,7 @@
             </section>
 
             <section id="Servicios" class="container py-4">  <!--Tercera seccion--> 
-                <div class="text-center mb-4">
+                <div class="text-center mb-4 fw-bold">
                     <h2>NUESTROS SERVICIOS</h2>
                 </div>
 
@@ -246,10 +246,10 @@
                 </div>
             </section>
 
-            <section id="Experiencia" class="row g-4"> <!--quinta seccion--> 
-                <div class="text-center">
+            <section id="Experiencia" class="row g-4"> <!--cuarta seccion--> 
+                <div class="text-center mb-4 fw-bold">
                     <h2>NUESTRA EXPERIENCIA EN EL TALLER</h2>
-                    <P>Algunos de los proyectos que han pasado por nuestras manos</P>
+                    <P class="fw-normal">Algunos de los proyectos que han pasado por nuestras manos</P>
                 </div>
 
                 <!-- Carro 1 -->
@@ -324,16 +324,16 @@
                 </div>
             </section>
 
-            <section id="Agendamiento">    
+            <section id="Agendamiento"> <!--quinta seccion-->   
                 
             </section>
 
-            <section id="Marcas" class="py-4 text-center container-fluid"> <!--sexta seccion-->
-                <div class="text-center">
+            <section id="Marcas" class="pt-5 text-center container-fluid"> <!--sexta seccion-->
+                <div class="text-center mb-4 fw-bold pb-2">
                     <h2>TRABAJAMOS CON ESTAS MARCAS</h2>
                 </div>
                 
-                <div class="logos row justify-content-center align-items-center g-4 bg-light">
+                <div class="logos row justify-content-center align-items-center g-4 bg-light py-5">
                     <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Nissan.png" alt="Nissan" class="img-fluid brand-logo"></div>
                     <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Renault.png" alt="Renault" class="img-fluid brand-logo"></div>
                     <div class="col-4 col-md-2"><img src="./Images/Logos/Logo-Chevrolet.png" alt="Chevrolet" class="img-fluid brand-logo"></div>
@@ -364,33 +364,43 @@
 
         </main>
 
-        <footer id="Contacto" class="footer-tecnicars d-flex flex-column align-items-center justify-content-center py-4 px-4 text-light"> <!--Septima seccion-->
-            <div class="logo"> 
-                <img src="./Images/Logo.png" alt="Logo Taller Tecnicars"
-                style="width: auto; height: 100px;">
-            </div>
-            <div class="ubicacion">
-                <h2>Nuestra ubicación:</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d993.6225093094196!2d-73.98274351821365!3d5.0239691725348115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMDEnMjYuMCJOIDczwrA1OCc1Ni4zIlc!5e0!3m2!1ses-419!2sus!4v1793336163509!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-            </div>
-
-            <div class="direccion">
-                <h2>Sede:</h2>
-                <p>Barrio la Paz, Zipaquira</p>
-                <p>Calle 6 #36-51</p>
-            </div>
-
-            <div class="telefonos">
-                <h2>Contacto:</h2>
-                <h3>WhatsApp</h3>
-                <p>3153356732</p>
-                <h3>Correo</h3>
-                <p>tallertecnicars96@gmail.com</p>
-            </div>
+        <footer id="Contacto" class="footer-tecnicars py-5 px-4 text-light"> <!--Septima seccion-->
+            <div class="container-fluid">
+                <div class="row align-items-center g-4">
             
-            <div class="horario">           
-                <p>Lunes a Viernes: 8:00am - 6:00pm</p>
-                <p>Sabados: 8:00am - 2:00pm</p>
+                    <div class="col-md-3">
+                        <div class="logo-footer mb-4 text-center"> 
+                            <img src="./Images/Logo.png" alt="Logo Taller Tecnicars"
+                            style="width: auto; height: 125px;">
+                        </div>
+                        <div class="ubicacion">
+                            <h3>Nuestra ubicación:</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d993.6225093094196!2d-73.98274351821365!3d5.0239691725348115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMDEnMjYuMCJOIDczwrA1OCc1Ni4zIlc!5e0!3m2!1ses-419!2sus!4v1793336163509!5m2!1ses-419!2sus" width="400" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8 row g-4 text-end">
+                        <div class="direccion col-md-4">
+                            <h3>Sede:</h3>
+                            <p>Barrio la Paz, Zipaquira</p>
+                            <p>Calle 6 #36-51</p>
+                        </div>
+
+                        <div class="telefonos col-md-4">
+                            <h3>Contacto:</h3>
+                            <h5>WhatsApp</h5>
+                            <p>3153356732</p>
+                            <h5>Correo</h5>
+                            <p>tallertecnicars96@gmail.com</p>
+                        </div>
+                        
+                        <div class="horario col-md-4">
+                            <h3>Horario de atención:</h3>
+                            <p>Lunes a Viernes: 8:00am - 6:00pm</p>
+                            <p>Sabados: 8:00am - 2:00pm</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
